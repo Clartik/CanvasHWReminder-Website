@@ -1,0 +1,247 @@
+:root {
+    --accent-color: rgb(255, 66, 66);
+    --accent-color-hover: hsl(0, 100%, 40%);
+    --accent-color-press: hsl(0, 100%, 30%);
+
+    --primary-color: rgb(43, 81, 125);
+    --primary-color-hover: hsl(212, 49%, 25%);
+    --primary-color-press: hsl(212, 49%, 18%);
+
+    --secondary-color: rgb(87, 87, 87);
+    --secondary-color-hover: hsl(0, 0%, 28%);
+
+    --text-color: white;
+    --text-color-hover: rgba(255, 255, 255, 0.841);
+
+    --background-color: rgb(39, 39, 39);
+    --bottom-bar-color: rgba(39, 39, 39, 0.9);
+    --shadow-color: black;
+    --disabled-text-color: rgb(121, 121, 121);
+    --disabled-background-color: #303030;
+
+    --placeholder-text-color: rgb(150, 150, 150);
+    --placeholder-text-color-disabled: rgba(150, 150, 150, 0.164);
+
+    --progress-empty-color: hsl(0, 0%, 50%);
+    --progress-fill-color: hsl(128, 50%, 24%);
+
+    --border-radius: 6px;
+    --border-radius-extra: 12px;
+    --border-radius-widget: 20px;
+}
+
+/* .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+} */
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+
+    color: var(--text-color);
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar"
+    "main"
+    "footer";
+
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+/*#region Navbar */
+
+nav {
+    grid-area: navbar;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--primary-color);
+
+    padding: 0px 15px;
+    height: 70px;
+}
+
+#nav-website-logo {
+    display: flex;
+}
+
+#nav-website-icon {
+    width: 50px;
+    height: 50px;
+}
+
+#nav-website-name {
+    margin: 0px 10px;
+    font-size: xx-large;
+}
+
+#nav-website-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+
+    height: 100%;
+}
+
+#nav-website-page-links {
+    display: flex;
+}
+
+.nav-link {
+    margin: 15px;
+    border-radius: var(--border-radius-extra);
+
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 500;
+
+    transition: color 0.15s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+#nav-website-social-links {
+    display: flex;
+}
+
+/*#endregion */
+
+main {
+    grid-area: main;
+    
+    display: flex;
+    justify-content: center;
+
+    padding: 15px;
+}
+
+footer {
+    grid-area: footer;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+}
+
+h1 {
+    font-weight: 700;
+}
