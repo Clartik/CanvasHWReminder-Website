@@ -14,6 +14,8 @@
     --text-color-hover: rgba(255, 255, 255, 0.841);
 
     --background-color: rgb(39, 39, 39);
+    --light-background-color: hsl(0, 0%, 20%);
+
     --bottom-bar-color: rgba(39, 39, 39, 0.9);
     --shadow-color: black;
     --disabled-text-color: rgb(121, 121, 121);
@@ -184,6 +186,8 @@ nav {
     justify-content: space-between;
 
     background-color: var(--primary-color);
+    box-shadow: 1px 3px 10px var(--shadow-color);
+    z-index: 1;
 
     padding: 0px 15px;
     height: 70px;
@@ -191,6 +195,7 @@ nav {
 
 #nav-website-logo {
     display: flex;
+    text-decoration: none;
 }
 
 #nav-website-icon {
@@ -232,6 +237,14 @@ nav {
     color: var(--accent-color);
 }
 
+#discord-nav-link {
+    transition: color 0.15s;
+}
+
+#discord-nav-link:hover {
+    color: var(--accent-color);   
+}
+
 #nav-website-social-links {
     display: flex;
 }
@@ -246,13 +259,13 @@ main {
     width: 100%;
     
     display: grid;
-
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
 
     justify-items: center;
     align-items: center;
 
     background-color: var(--secondary-color);
+    box-shadow: 1px 3px 10px var(--shadow-color);
 }
 
 #download-label-btn-container {
@@ -262,19 +275,28 @@ main {
     
     justify-items: center;
     align-items: center;
+
+    row-gap: 15px;
+    margin-left: 100px;
 }
 
 #download-label {
     text-align: center;
 }
 
+.text-shadow {
+    text-shadow: 5px 5px 5px var(--shadow-color);
+}
+
 #download-img {
     width: 600px;
+    margin: 20px;
 
     flex-basis: 4;
 
-    padding: 20px;
-    margin-right:100px;
+    box-shadow: 1px 3px 10px var(--shadow-color);
+
+    margin-right: 100px;
 }
 
 #download-btn {
@@ -282,8 +304,8 @@ main {
 
     border-radius: var(--border-radius-extra);
     background-color: var(--primary-color);
+    box-shadow: 1px 3px 10px var(--shadow-color);
 
-    margin: 10px;
     padding: 10px 20px;
 
     transition: all 0.1s;
@@ -301,33 +323,37 @@ main {
     margin-right: 5px;
 }
 
-#download-future-platforms-container {
+#download-platforms-container {
     display: flex;
-
     justify-content: center;
 
-    gap: 20px;
-
+    gap: 40px;
     margin: 30px;
 }
 
-.download-future-platforms {
+.download-platforms {
     background-color: var(--secondary-color);
     border-radius: var(--border-radius);
+    box-shadow: 1px 3px 10px var(--shadow-color);
 
     text-align: center;
 
+    display: grid;
+    justify-content: center;
+
+    width: 450px;
     padding: 10px;
 }
 
-.download-future-platforms-label {
-    display: inline;
+.download-platform-img {
+    width: 400px;
+    margin: 20px 10px 0px 10px;
+    
+    filter: drop-shadow(1px 3px 8px black);
 }
 
-#macos-download-img {
-    width: 300px;
-
-    margin: 20px 10px 0px 10px;
+#linux-download-img {
+    width: 320px;
 }
 
 footer {

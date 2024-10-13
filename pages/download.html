@@ -16,23 +16,29 @@
 </head>
 <body>
     <nav>
-        <div id="nav-website-logo">
+        <a href="home.html" id="nav-website-logo">
             <img id="nav-website-icon" src="../assets/images/icon.png" alt="Canvas HW Reminder Icon">
             <h1 id="nav-website-name">Canvas HW Reminder</h1>
-        </div>
+        </a>
 
         <div id="nav-website-links">
             <div id="nav-website-page-links">
                 <a class="nav-link" href="home.html">Home</a>
                 <a class="nav-link" href="download.html">Download</a>
-                <a class="nav-link" href="blog.html">Blog</a>
+                <!-- <a class="nav-link" href="blog.html">Blog</a> -->
+            </div>
+
+            <div id="nav-website-social-links">
+                <a class="nav-link" href="">
+                    <i id="discord-nav-link" class="fa-brands fa-discord fa-xl"></i>
+                </a>
             </div>
         </div>
     </nav>
     <main>
         <div id="download-container">
             <div id="download-label-btn-container">
-                <h1 id="download-label">Never Again Forget Your Deadlines</h1>
+                <h1 class="text-shadow" id="download-label">Never Again Forget Your Deadlines</h1>
                 <button id="download-btn">
                     <i id="download-btn-icon" class="fa-solid fa-download"></i>
                     Download for Windows
@@ -40,15 +46,16 @@
             </div>
             <img id="download-img" src="../assets/images/download.png" alt="">
         </div>
-        <div id="download-future-platforms-container">
-            <div class="download-future-platforms">
-                <h2>MacOS</h2>
+        <div id="download-platforms-container">
+            <div class="download-platforms">
+                <h2 class="text-shadow">MacOS</h2>
                 <p>Coming Soon</p>
-                <img id="macos-download-img" src="../assets/images/macbook.png" alt="Macbook">
+                <img class="download-platform-img" id="macos-download-img" src="../assets/images/macbook.png" alt="Macbook">
             </div>
-            <div class="download-future-platforms">
-                <h2 class="download-future-platforms-label">Linux</h2>
+            <div class="download-platforms">
+                <h2 class="text-shadow">Linux</h2>
                 <p>Coming Soon</p>
+                <img class="download-platform-img" id="linux-download-img" src="../assets/images/linux.png" alt="Linux">
             </div>
         </div>
     </main>
