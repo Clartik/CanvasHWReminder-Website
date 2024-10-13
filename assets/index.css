@@ -7,14 +7,19 @@
     --primary-color-hover: hsl(212, 49%, 25%);
     --primary-color-press: hsl(212, 49%, 18%);
 
-    --secondary-color: rgb(87, 87, 87);
+    --secondary-color: hsl(0, 0%, 34%);
     --secondary-color-hover: hsl(0, 0%, 28%);
 
-    --text-color: white;
-    --text-color-hover: rgba(255, 255, 255, 0.841);
+    --widget-background-color: hsl(0, 0%, 25%);
+
+    --primary-text-color: white;
+    --secondary-text-color: hsl(0, 0%, 85%);
 
     --background-color: rgb(39, 39, 39);
     --light-background-color: hsl(0, 0%, 20%);
+
+    --footer-border-color: hsl(0, 0%, 75%);
+    --footer-color: hsl(0, 0%, 10%);
 
     --bottom-bar-color: rgba(39, 39, 39, 0.9);
     --shadow-color: black;
@@ -145,7 +150,7 @@
     margin: 0;
     padding: 0;
 
-    color: var(--text-color);
+    color: var(--primary-text-color);
 }
 
 h1 {
@@ -289,6 +294,7 @@ main {
 
     padding: 20px;
     margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 #frontpage-label {
@@ -309,9 +315,9 @@ main {
 }
 
 #frontpage-img {
-    margin: 20px;
+    margin: 15px;
     margin-bottom: 0px;
-    height: 500px;
+    height: 600px;
 
     border-radius: var(--border-radius-extra);
 
@@ -319,7 +325,7 @@ main {
 }
 
 .separator-container {
-    margin: 20px 10px;
+    margin: 15px 15px;
 }
 
 .separator-thick {
@@ -350,12 +356,16 @@ main {
     
     gap: 30px;
     padding: 20px;
+    margin: 20px 0px;
 }
 
 .widget {
     width: 250px;
 
-    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    background-color: var(--widget-background-color);
     border-radius: var(--border-radius);
     box-shadow: 1px 3px 10px var(--shadow-color);
     
@@ -364,14 +374,25 @@ main {
     padding: 10px 20px;
 }
 
+.widget-header-label {
+    margin-left: 3px;   
+}
+
+.details-label {
+    color: var(--secondary-text-color);
+
+    font-weight: 300;
+}
+
 #download-container {
     width: 100%;
     
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
 
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+
+    gap: 50px;
 
     background-color: var(--secondary-color);
     box-shadow: 1px 3px 10px var(--shadow-color);
@@ -385,8 +406,10 @@ main {
     justify-items: center;
     align-items: center;
 
+    font-size: large;
+
     row-gap: 15px;
-    margin-left: 100px;
+    /* margin-left: 100px; */
 }
 
 #download-label {
@@ -394,7 +417,7 @@ main {
 }
 
 .text-shadow {
-    text-shadow: 5px 5px 5px var(--shadow-color);
+    text-shadow: 3px 3px 8px var(--shadow-color);
 }
 
 #download-img {
@@ -406,7 +429,7 @@ main {
     border-radius: var(--border-radius-extra);
     box-shadow: 1px 3px 10px var(--shadow-color);
 
-    margin-right: 100px;
+    /* margin-right: 100px; */
 }
 
 #download-btn {
@@ -444,7 +467,7 @@ main {
 }
 
 .download-platforms {
-    background-color: var(--secondary-color);
+    background-color: var(--widget-background-color);
     border-radius: var(--border-radius);
     box-shadow: 1px 3px 10px var(--shadow-color);
 
@@ -471,9 +494,18 @@ main {
 footer {
     grid-area: footer;
 
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
 
+    border-top: var(--footer-border-color) 1px solid;
+    background-color: var(--footer-color);
+
     padding: 15px;
+}
+
+#footer-label {
+    color: var(--secondary-text-color);
+
+    font-size: small;
 }

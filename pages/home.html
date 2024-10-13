@@ -13,6 +13,8 @@
 
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
     <link rel="stylesheet" href="../assets/index.css">
+
+    <script type="text/javascript" src="../build/home.js" defer></script>
 </head>
 <body>
     <nav>
@@ -37,11 +39,11 @@
     </nav>
     <main>
         <div id="frontpage-container">
-            <h1 id="frontpage-label">The App that Never Forgets</h1>
+            <h1 id="frontpage-label">Never Forget About Your HW</h1>
 
             <button class="primary-btn" id="frontpage-btn">
                 Download Now
-                <i class="fa-solid fa-arrow-right"></i>
+                <i id="download-now-btn-icon" class="fa-solid fa-arrow-right"></i>
             </button>
 
             <img id="frontpage-img" src="../assets/images/download.png" alt="">
@@ -53,21 +55,33 @@
 
         <div id="widget-containers">
             <div class="widget">
-                <h2>Get Reminders</h2>
-                <p>Receive HW Reminders Before Due Dates</p>
+                <h2>
+                    <i class="fa-solid fa-bell fa-sm"></i>
+                    <span class="widget-header-label">Get Reminders</span>
+                </h2>
+                <p class="details-label">Receive HW Reminders Before the Due Date</p>
             </div>
 
             <div class="widget">
-                <h2>Stay Up to Date</h2>
-                <p>Always Synced with Canvas</p>
+                <h2>
+                    <i class="fa-solid fa-clock fa-sm"></i>
+                    <span class="widget-header-label">Stay Up to Date</span>
+                </h2>
+                <p class="details-label">Always Synced with Canvas</p>
             </div>
 
             <div class="widget">
-                <h2>Private and Secure</h2>
-                <p>All Canvas Information is Securely Saved On-Device</p>
+                <h2>
+                    <i class="fa-solid fa-lock fa-sm"></i>
+                    <span class="widget-header-label">Private + Secure</span>
+                </h2>
+                <p class="details-label">All Canvas Information is Securely Saved On-Device</p>
             </div>
         </div>
     </main>
-    <footer>Copyright © 2024 Canvas HW Reminder. All Rights Reserved.</footer>
+    <footer>
+        <p id="footer-label">© 2024 Canvas HW Reminder. All rights reserved.</p>
+
+        </footer>
 </body>
 </html>
