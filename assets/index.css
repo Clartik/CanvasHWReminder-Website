@@ -235,7 +235,7 @@ nav {
     font-size: large;
     font-weight: 500;
 
-    transition: color 0.15s;
+    transition: color 0.2s;
 }
 
 .nav-link:hover {
@@ -271,7 +271,7 @@ main {
 
     padding: 10px 20px;
 
-    transition: all 0.1s;
+    transition: transform 0.1s;
 }
 
 .primary-btn:hover {
@@ -284,6 +284,10 @@ main {
     background-color: var(--primary-color-press);
 }
 
+.img-drop-shadow {
+    filter: drop-shadow(1px 3px 5px var(--shadow-color));
+}
+
 #frontpage-container {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -293,7 +297,7 @@ main {
     row-gap: 15px;
 
     padding: 20px;
-    margin-top: 80px;
+    margin-top: 75px;
     margin-bottom: 30px;
 }
 
@@ -307,6 +311,12 @@ main {
     background: linear-gradient(to right, rgb(88, 180, 255), rgb(28, 93, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#frontpage-sub-label {
+    font-size: 1.5em;
+
+    margin-top: -15px;
 }
 
 #frontpage-btn {
@@ -350,20 +360,60 @@ main {
     box-shadow: 1px 3px 10px var(--shadow-color);
 }
 
+#what-does-it-do-container {
+    display: grid;
+
+    background-color: var(--secondary-color);
+
+    grid-template-columns: 1fr 1fr;
+
+    justify-items: center;
+
+    padding: 20px;
+    margin: 40px 150px;
+
+    border-radius: var(--border-radius-extra);
+
+    box-shadow: 1px 3px 10px var(--shadow-color);
+}
+
+#what-does-it-do-label-container {
+    display: flex;
+    
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 10px;
+}
+
+#what-does-it-do-header {
+    font-size: 2em;
+}
+
+#what-does-it-do-info {
+    font-size: 1.1em;
+}
+
+#what-does-it-do-img {
+    width: 500px;
+
+    grid-row: span 2;
+}
+
 #widget-containers {
     display: flex;
     justify-content: center;
     
     gap: 30px;
     padding: 20px;
-    margin: 20px 0px;
 }
 
 .widget {
     width: 250px;
 
     display: grid;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto ;
 
     background-color: var(--widget-background-color);
     border-radius: var(--border-radius);
@@ -374,8 +424,30 @@ main {
     padding: 10px 20px;
 }
 
+.widget-small {
+    width: 220px;
+    height: max-content;    
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    background-color: var(--widget-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 1px 3px 10px var(--shadow-color);
+    
+    text-align: center;
+
+    padding: 10px 10px;
+}
+
 .widget-header-label {
     margin-left: 3px;   
+}
+
+.widget-header-small {
+    font-size: 0.8em;
+
+    margin-left: 3px;
 }
 
 .details-label {
@@ -383,6 +455,8 @@ main {
 
     font-weight: 300;
 }
+
+/*#region Download Page*/
 
 #download-container {
     width: 100%;
@@ -490,6 +564,8 @@ main {
 #linux-download-img {
     width: 320px;
 }
+
+/*#endregion*/
 
 footer {
     grid-area: footer;
