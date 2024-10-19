@@ -366,10 +366,11 @@ main {
     background-color: var(--secondary-color);
 
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     justify-items: center;
 
-    padding: 20px;
+    padding: 30px 20px;
     margin: 40px 150px;
 
     border-radius: var(--border-radius-extra);
@@ -383,7 +384,6 @@ main {
     flex-direction: column;
 
     gap: 10px;
-
     padding: 10px;
 }
 
@@ -404,9 +404,12 @@ main {
 #widget-containers {
     display: flex;
     justify-content: center;
+
+    width: 100%;
+    height: max-content;
     
     gap: 30px;
-    padding: 20px;
+    padding: 20px;  
 }
 
 .widget {
@@ -426,7 +429,6 @@ main {
 
 .widget-small {
     width: 220px;
-    height: max-content;    
 
     display: grid;
     grid-template-rows: auto 1fr;
@@ -437,7 +439,7 @@ main {
     
     text-align: center;
 
-    padding: 10px 10px;
+    padding: 15px;
 }
 
 .widget-header-label {
@@ -454,6 +456,59 @@ main {
     color: var(--secondary-text-color);
 
     font-weight: 300;
+}
+
+.img-scale-width {
+    width: 100%;
+}
+
+.rounded-corners {
+    border-radius: var(--border-radius-extra);
+}
+
+#customize-options-container {
+    padding: 20px 20px;
+    margin: 20px 150px;
+
+    text-align: center;
+}
+
+#customize-options-header {
+    font-size: 2rem;
+}
+
+#all-options-container {
+    margin: 20px 40px;
+
+    border-radius: var(--border-radius-extra);
+    overflow: hidden;
+
+    box-shadow: 1px 3px 10px var(--shadow-color);
+}
+
+.options-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.options-container-text {
+    background-color: var(--light-background-color);
+
+    padding: 20px;
+
+    text-align: left;
+
+    /* box-shadow: 1px 3px 10px var(--shadow-color) inset; */
+}
+
+.options-container-option {
+    background-color: var(--secondary-color);
+
+    padding: 20px;
+
+    box-shadow: 1px 3px 10px var(--shadow-color);
+    z-index: 1;
 }
 
 /*#region Download Page*/
@@ -567,6 +622,8 @@ main {
 
 /*#endregion*/
 
+/*#region Footer */
+
 footer {
     grid-area: footer;
 
@@ -585,3 +642,5 @@ footer {
 
     font-size: small;
 }
+
+/*#endregion*/
