@@ -646,7 +646,7 @@ footer {
 #footer-label {
     color: var(--secondary-text-color);
 
-    font-size: small;
+    font-size: 0.9rem;
 }
 
 /*#endregion*/
