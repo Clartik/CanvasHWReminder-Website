@@ -12,6 +12,9 @@
 
     --widget-background-color: hsl(0, 0%, 25%);
 
+    --support-color: rgb(208, 111, 0);
+    --support-color-hover: hsl(32, 100%, 35%);
+
     --primary-text-color: white;
     --secondary-text-color: hsl(0, 0%, 85%);
 
@@ -598,6 +601,33 @@ main {
 
 #download-btn-icon {
     margin-right: 5px;
+}
+
+#support-container {
+    position: absolute;
+    margin-top: 420px;
+
+    font-weight: 500;
+}
+
+#support-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+
+    border-radius: var(--border-radius-extra);
+    background-color: var(--support-color);
+
+    /* box-shadow: 1px 3px 10px var(--shadow-color); */
+    
+    margin: 10px;
+    padding: 10px 20px;
+
+    transition: 0.1s all;
+}
+
+#support-btn:hover {
+    scale: 1.1;
 }
 
 #download-platforms-container {
