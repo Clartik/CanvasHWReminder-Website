@@ -221,7 +221,7 @@ nav {
     justify-content: center;
     align-items: center;
 
-    gap: 15px;
+    gap: 5px;
 
     height: 100%;
 }
@@ -573,8 +573,6 @@ main {
 
     border-radius: var(--border-radius-extra);
     box-shadow: 1px 3px 10px var(--shadow-color);
-
-    /* margin-right: 100px; */
 }
 
 #download-btn {
@@ -612,22 +610,67 @@ main {
 
 #support-btn {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
 
     border-radius: var(--border-radius-extra);
     background-color: var(--support-color);
 
-    /* box-shadow: 1px 3px 10px var(--shadow-color); */
+    box-shadow: 1px 3px 10px var(--shadow-color);
     
     margin: 10px;
-    padding: 10px 20px;
+    padding: 8px 15px;
 
     transition: 0.1s all;
 }
 
 #support-btn:hover {
     scale: 1.1;
+}
+
+#not-virus-container {
+    margin: 40px 80px;
+    padding: 20px 30px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+
+    border-radius: var(--border-radius-extra);
+    background-color: var(--widget-background-color);
+    color: var(--secondary-text-color);
+ 
+    box-shadow: 1px 3px 10px var(--shadow-color);
+}
+
+#not-virus-header {
+    margin: 0px 0px 5px 0px;
+
+    /* color: orange; */
+}
+
+#not-virus-header-icon {
+    color: orange;
+}
+
+#not-virus-steps-container {
+    margin: 15px 0px 0px 0px;
+}
+
+#not-virus-steps-header {
+    font-size: 1.1rem;
+}
+
+#not-virus-steps {
+    margin: 2px 0px 0px 0px;
+    color: var(--secondary-text-color);
+    padding-left: 15px;
+}
+
+#not-virus-img {
+    width: 500px;
+    margin: 10px 0px;
+
+    border-radius: var(--border-radius-extra);
 }
 
 #download-platforms-container {
