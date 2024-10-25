@@ -180,9 +180,10 @@ body {
     "main"
     "footer";
 
-    overflow-x: hidden;
-
+    max-width: 100vw;
     min-height: 100vh;
+
+    /* overflow-x: hidden; */
     
     background-color: var(--background-color);
 }
@@ -200,11 +201,11 @@ nav {
     background-color: var(--primary-color);
     box-shadow: 1px 3px 10px var(--shadow-color);
     z-index: 1;
-
-    max-width: calc(100vw - 15px);
+    
+    max-width: 100%;
+    height: 70px;
 
     padding: 5px 15px;
-    height: 70px;
 }
 
 #nav-website-logo {
@@ -395,12 +396,12 @@ main {
     background-color: var(--secondary-color);
 
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
 
     justify-items: center;
 
-    padding: 30px 20px;
-    margin: 40px 150px;
+    padding: 30px;
+    margin: 40px 8%;
 
     border-radius: var(--border-radius-extra);
 
@@ -426,14 +427,21 @@ main {
     font-size: 1.1em;
 }
 
-#what-does-it-do-img {
-    width: 500px;
-
+#what-does-it-do-img-container {
     grid-row: span 2;
+    align-self: center;
+
+    padding: 0px 50px;
+}
+
+#what-does-it-do-img {
+    width: 100%;
 }
 
 #widget-containers {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
 
     width: 100%;
@@ -460,6 +468,7 @@ main {
 
 .widget-small {
     width: 220px;
+    height: calc(130px - 30px);
 
     display: grid;
     grid-template-rows: auto 1fr;
@@ -508,8 +517,7 @@ main {
 /*#region Customize Options */
 
 #customize-options-container {
-    padding: 20px 20px;
-    margin: 20px 150px;
+    margin: 40px 8%;
 
     text-align: center;
 }
@@ -563,6 +571,16 @@ main {
 
     box-shadow: 1px 3px 10px var(--shadow-color);
     z-index: 1;
+}
+
+.left-container {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.right-container {
+    grid-column: 2;
+    grid-row: 1;
 }
 
 /*#endregion */
@@ -792,6 +810,8 @@ footer {
         height: 40px;
 
         padding: 2.5px 8px;
+
+        width: calc(100vw - (2 * 8px));
     }
 
     #nav-website-logo {
@@ -994,4 +1014,54 @@ footer {
     
     /*#endregion */
 
+}
+
+@media only screen and (768px < width <= 1025px) {
+    
+}
+
+@media only screen and (768px < width <= 1025px) {
+    #what-does-it-do-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    #what-does-it-do-img-container {
+        /* display: none; */
+        grid-row: 3;
+
+        margin: 20px 0px 0px 0px;
+    }
+
+    #widget-containers {
+        grid-row: 2;
+    }
+
+    .widget-small {
+        width: 210px;
+    }
+
+    .options-container-text-header {
+        font-size: 1.8rem;
+    }
+
+    .options-container-text-info {    
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (1025px < width <= 1440px) {
+    #what-does-it-do-img-container {
+        padding: 0px 30px;
+    }
+}
+
+@media only screen and (1440px < width <= 2560px) {
+    #what-does-it-do-container {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #what-does-it-do-img-container {
+        padding: 0px 150px;
+    }
 }
