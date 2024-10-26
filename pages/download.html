@@ -14,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/icon.png">
     <link rel="stylesheet" href="../assets/index.css">
 
+    <script type="text/javascript" src="../src/navbar.js" defer></script>
     <script type="text/javascript" src="../src/download.js" defer></script>
 </head>
 <body>
@@ -35,7 +36,24 @@
                 Support
             </button>
         </div>
+
+        <i id="nav-website-links-menu-lg" class="fa-solid fa-bars fa-2xl"></i>
+        <i id="nav-website-links-menu-sm" class="fa-solid fa-bars fa-xl"></i>
     </nav>
+
+    <div id="nav-website-links-menu-backdrop" class="hide">
+        <div id="nav-website-links-menu-container">
+            <i id="nav-menu-close-btn" class="fa-solid fa-x"></i>
+            <a class="nav-menu-link" href="home.html">Home</a>
+            <a class="nav-menu-link" href="download.html">Download</a>
+
+            <button id="support-menu-btn">
+                <i class="fa-brands fa-paypal"></i>
+                Support
+            </button>
+        </div>
+    </div>
+
     <main>
         <div id="download-container">
             <div id="download-label-btn-container">
