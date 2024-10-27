@@ -12,6 +12,8 @@ navMenuCloseBtn.addEventListener('click', navLinksMenuClose);
 navLinksMenuLg.addEventListener('click', navLinksMenuOpen);
 navLinksMenuSm.addEventListener('click', navLinksMenuOpen);
 
+navMenuBackdrop.addEventListener('click', navLinksMenuClose);
+
 function navLinksMenuOpen() {
     isMenuOpen = true;
     navMenuBackdrop.classList.remove('hide');

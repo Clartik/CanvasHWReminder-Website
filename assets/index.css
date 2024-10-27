@@ -295,7 +295,6 @@ nav {
     position: fixed;
 
     z-index: 2;
-    justify-self: right;
 
     width: 100vw;
     height: 100vh;
@@ -306,7 +305,9 @@ nav {
 #nav-website-links-menu-container {
     background-color: var(--background-color);
 
-    justify-self: right;
+    position: fixed;
+    right: 0;
+
     align-items: end;
 
     display: flex;
@@ -322,7 +323,7 @@ nav {
 
 #nav-menu-close-btn {
     align-self: flex-start;
-    padding: 5px;
+    padding: 10px;
 
     display: inline-block;
 
