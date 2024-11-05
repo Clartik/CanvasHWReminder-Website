@@ -774,6 +774,12 @@ main {
     text-align: center;
 }
 
+#download-coming-label {
+    font-size: 1.5em;
+
+    color: var(--accent-color);
+}
+
 .text-shadow {
     text-shadow: 3px 3px 8px var(--shadow-color);
 }
@@ -1218,6 +1224,10 @@ footer {
 
     #download-label {
         font-size: 1.8rem;
+    }
+    
+    #download-coming-label {
+        font-size: 1.1em;
     }
 
     #download-btn {
@@ -1789,6 +1799,10 @@ footer {
         font-size: 1.8rem;
     }
 
+    #download-coming-label {
+        font-size: 1.1em;
+    }
+
     #download-btn {
         font-size: 1rem;
         padding: 10px 15px;
@@ -1853,7 +1867,11 @@ footer {
     }
 
     #download-label {
-        font-size: 2.7vw;
+        font-size: 2.2rem;
+    }
+
+    #download-coming-label {
+        font-size: 1.2em;
     }
 
     #download-btn {
@@ -1881,6 +1899,8 @@ footer {
     #widget-containers {
         align-self: center;
     }
+
+    
 }
 
 @keyframes fade-in {
