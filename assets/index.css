@@ -230,6 +230,14 @@ nav {
     gap: 10px;
 }
 
+#nav-website-logo:hover {
+    /* background-color: var(--primary-color-hover);
+    border-radius: var(--border-radius);
+
+    padding: 10px;
+    padding-left: 0px; */
+}
+
 #nav-website-icon {
     width: 50px;
     height: 50px;
@@ -237,6 +245,12 @@ nav {
 
 #nav-website-name {
     font-size: 2rem;
+
+    transition: color 0.15s;
+}
+
+#nav-website-name:hover {
+    color: var(--accent-color);
 }
 
 #nav-website-links {
@@ -1197,27 +1211,27 @@ footer {
     }
 
     #download-label-btn-container {
-        margin-top: 20px;
+        margin-top: 25px;
 
-        row-gap: 10px;
+        row-gap: 12.5px;
     }
 
     #download-label {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     #download-btn {
         font-size: 0.8rem;
 
-        padding: 5px 10px;
+        padding: 7.5px 10px;
 
-        border-radius: var(--border-radius);
+        border-radius: var(--border-radius-extra);
     }
 
     #download-img {
-        width: 70%;
+        width: 85%;
 
-        margin: 10px 0px 0px 0px;
+        margin-top: 5px;
     }
 
     #not-virus-container {
@@ -1857,7 +1871,7 @@ footer {
 
 @media only screen and (426px <= width <= 1025px) {
     #not-virus-container {
-        margin: 30px 50px;
+        margin: 30px 6%;
         grid-template-columns: auto;
         grid-template-rows: auto auto;
     }
