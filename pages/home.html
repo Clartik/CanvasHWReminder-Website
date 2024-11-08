@@ -84,11 +84,11 @@
             <div id="what-does-it-do-label-container">
                 <h2 id="what-does-it-do-header" class="text-shadow">What Does It Do?</h2>
                 <p id="what-does-it-do-info">Canvas HW Reminder automatically retrieves your HW from Canvas every hour 
-                    and reminds you when you want to be reminded before the due date.</p>
+                    and reminds you when you want to be reminded before the deadline.</p>
             </div>
 
             <div id="what-does-it-do-img-container">
-                <video id="what-does-it-do-img" class="img-drop-shadow rounded-corners" src="../assets/videos/NotificationRemind.mp4" autoplay loop></video>
+                <video id="what-does-it-do-img" class="img-drop-shadow rounded-corners" src="../assets/videos/NotificationRemind.mp4" autoplay loop playsinline></video>
             </div>
 
             <div id="widget-containers">
@@ -129,7 +129,7 @@
                         <p class="options-container-text-info">Choose how in advance you want to be reminded about your HW deadlines.</p>
                     </div>
                     <div class="right-container options-container-option">
-                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/WhenToRemind.mp4" autoplay loop></video>
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/WhenToRemind.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
                         <p class="options-container-text-info">Choose how long you want an assignment that you missed from disappearing from your course cards.</p>
                     </div>
                     <div class="left-container options-container-option">
-                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/HowLongPastDue.mp4" autoplay loop></video>
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/HowLongPastDue.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -150,7 +150,7 @@
                             <br>Right click again to allow it to remind you.</p>
                     </div>
                     <div class="right-container options-container-option">
-                        <video class="img-scale-width rounded-corners" src="../assets/videos/ToggleRemind.mp4" autoplay loop></video>
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/ToggleRemind.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -158,10 +158,20 @@
                     <div class="right-container options-container-text">
                         <h2 class="options-container-text-header">Don't Remind for Assignments that Don't Require Submissions</h2>
                         <p class="options-container-text-info">Choose whether you want reminders for assignments that don't need you to submit anything or not.</p>
+
+                        <div class="option-switch-container">
+                            <label class="checkbox-label">Don't remind for no submissions?</label>
+                            <label class="switch">
+                                <input type="checkbox" id="dont-remind-no-submissions-checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
                     </div>
                     <div class="left-container options-container-option">
-                        <!-- <img class="img-scale-width rounded-corners" src="../assets/images/Home.png" alt=""> -->
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/DontRemindNoSubmissions.mp4" autoplay loop></video> -->
+                        <div class="before-after-img-container">
+                            <img id="dont-remind-no-submissions-before-img" class="img-scale-width rounded-corners before-after-img active" src="../assets/images/Before-After/Default-Before.png" alt="">
+                            <img id="dont-remind-no-submissions-after-img" class="img-scale-width rounded-corners before-after-img second-before-after-img" src="../assets/images/Before-After/DontRemindNoSubmissions-After.png" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -169,9 +179,20 @@
                     <div class="left-container options-container-text">
                         <h2 class="options-container-text-header">Show Exact Due Dates</h2>
                         <p class="options-container-text-info">Choose whether you want to see exactly when an assignment is due rather than a relative due date from your time.</p>
+
+                        <div class="option-switch-container">
+                            <label class="checkbox-label">Show exact due dates?</label>
+                            <label class="switch">
+                                <input type="checkbox" id="show-exact-due-dates-checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
                     </div>
                     <div class="right-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/ShowExactDueDates.mp4" autoplay loop></video> -->
+                        <div class="before-after-img-container">
+                            <img id="show-exact-due-dates-before-img" class="img-scale-width rounded-corners before-after-img active" src="../assets/images/Before-After/Default-Before.png" alt="">
+                            <img id="show-exact-due-dates-after-img" class="img-scale-width rounded-corners before-after-img second-before-after-img" src="../assets/images/Before-After/ShowExactDueDates-After.png" alt="">
+                        </div>
                     </div>
                 </div>
 
@@ -190,10 +211,9 @@
                     </div>
                     <div class="left-container options-container-option">
                         <div class="before-after-img-container">
-                            <img id="always-expand-cards-before-img" class="img-scale-width rounded-corners before-after-img active" src="../assets/images/Before-After/AlwaysExpandCards-Before.png" alt="">
+                            <img id="always-expand-cards-before-img" class="img-scale-width rounded-corners before-after-img active" src="../assets/images/Before-After/Default-Before.png" alt="">
                             <img id="always-expand-cards-after-img" class="img-scale-width rounded-corners before-after-img second-before-after-img" src="../assets/images/Before-After/AlwaysExpandCards-After.png" alt="">
                         </div>
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/AlwaysExpandCourseCards.mp4" autoplay loop></video> -->
                     </div>
                 </div>
 
@@ -203,7 +223,7 @@
                         <p class="options-container-text-info">Choose whether you want the notification reminders on screen until dismissed or not.</p>
                     </div>
                     <div class="right-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/KeepNotificationsOnScreen.mp4" autoplay loop></video> -->
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/KeepNotificationsOnScreen.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -213,7 +233,7 @@
                         <p class="options-container-text-info">Choose whether you want silent notifications or not.</p>
                     </div>
                     <div class="left-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/SilenceNotifications.mp4" autoplay loop></video> -->
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/SilenceNotifications.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -226,7 +246,7 @@
                         </p>
                     </div>
                     <div class="right-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/LaunchonStart.mp4" autoplay loop></video> -->
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/LaunchonStart.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -236,7 +256,7 @@
                         <p class="options-container-text-info">Choose whether you want Canvas HW Reminder to minimize to system tray as the app bootups or not.</p>
                     </div>
                     <div class="left-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/MinimizeAppLaunch.mp4" autoplay loop></video> -->
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/MinimizeAppLaunch.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
 
@@ -246,7 +266,7 @@
                         <p class="options-container-text-info">Choose whether you want Canvas HW Reminder to minimize to system tray when closed or not.</p>
                     </div>
                     <div class="right-container options-container-option">
-                        <!-- <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/MinimizeAppClose.mp4" autoplay loop></video> -->
+                        <video class="img-scale-width rounded-corners" src="../assets/videos/Settings/MinimizeAppClose.mp4" autoplay loop playsinline></video>
                     </div>
                 </div>
             </div>

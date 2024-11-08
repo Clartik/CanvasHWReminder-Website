@@ -190,7 +190,7 @@ body {
     max-width: 100vw;
     min-height: 100vh;
 
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     
     background-color: var(--background-color);
 }
@@ -742,12 +742,14 @@ main {
 .option-switch-container {
     justify-self: center;
     align-items: center;
+    justify-content: center;
 
     margin: 30px;
     padding: 15px 20px;
 
     display: flex;
     gap: 15px;
+    /* flex-wrap: wrap; */
 
     background-color: var(--secondary-color);
     border-radius: var(--border-radius-extra);
@@ -805,11 +807,18 @@ main {
     box-shadow: 1px 5px 10px var(--shadow-color);
     border-radius: 34px;
 
+    min-width: 45px;
+    min-height: 25px;
+
     transition: transform 0.1s;
 }
 
 .switch:hover {
     transform: scale(1.15);
+}
+
+.switch:active {
+    transform: scale(0.9);
 }
 
 /* Hide default HTML checkbox */
@@ -1613,12 +1622,14 @@ footer {
     /*#endregion */
 
     /*#region Download Page */
-
-    
     
     /*#endregion */
 
     /*#endregion */
+
+    .option-switch-container {
+        margin: 20px 15px;
+    }
 
     footer {
         padding: 10px;
@@ -1630,6 +1641,33 @@ footer {
 
     #footer-copyright-label {    
         font-size: 0.65rem;
+    }
+}
+
+@media only screen and (width <= 320px) {
+    .option-switch-container {
+        margin: 15px 5px;
+        padding: 10px 15px;
+
+        gap: 5px;
+    }
+
+    .checkbox-label {
+        font-size: 0.7rem;
+    }
+
+    .switch {
+        scale: 0.7;
+    }
+}
+
+@media only screen and (320px < width <= 426px) {
+    .checkbox-label {
+        font-size: 0.9rem;
+    }
+
+    .switch {
+        scale: 0.9;
     }
 }
 
@@ -1776,6 +1814,15 @@ footer {
         grid-row: 0;
     }
 
+    .option-switch-container {
+        margin: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .switch {
+        scale: 1.1;
+    }
+
     footer {
         padding: 10px;
     }
@@ -1867,6 +1914,11 @@ footer {
     .right-container {
         grid-column: 1;
         grid-row: 0;
+    }
+
+    .option-switch-container {
+        margin: 20px 15px;
+        margin-bottom: 10px;
     }
 }
 
@@ -2048,6 +2100,12 @@ footer {
 
     100% {
         opacity: 1;
+    }
+}
+
+@media not (hover: hover) {
+    *:hover {
+        transform: none !important;
     }
 }
 
