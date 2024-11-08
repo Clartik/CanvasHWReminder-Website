@@ -710,10 +710,14 @@ main {
     font-size: 1.1rem;
 
     color: var(--secondary-text-color);
+
+    max-width: 100%;
 }
 
 .options-container-option {
     padding: 30px;
+
+    position: relative;
 
     display: grid;
     justify-content: center;
@@ -758,16 +762,31 @@ main {
 
 .before-after-img-container {
     position: relative;
-    width: 550px;
+
+    width: 100%;
+    height: auto;
+
     aspect-ratio: 4/3;
 }
 
 .before-after-img {
-    position: absolute;
     left: 0;
     top: 0;
+    right: 0;
+    bottom: 0;
 
     z-index: 0;
+}
+
+.second-before-after-img {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
 }
 
 .before-after-img.active {
