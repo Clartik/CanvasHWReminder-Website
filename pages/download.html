@@ -64,7 +64,10 @@
         <div id="download-container">
             <div id="download-label-btn-container">
                 <h1 class="text-shadow" id="download-label">Download Once, Never Worry Again</h1>
-                <h3 class="text-shadow" id="download-coming-label">Coming Winter 2024</h3>
+                <h3 class="text-shadow download-coming-label hide" id="download-coming-label-windows">Coming Winter 2024 for Windows</h3>
+                <h3 class="text-shadow download-coming-label hide" id="download-coming-label-macos">Coming Soon for MacOS</h3>
+                <h3 class="text-shadow download-coming-label hide" id="download-coming-label-linux">Coming Soon for Linux</h3>
+                <h3 class="text-shadow download-coming-label hide" id="download-coming-label-mobile">Coming to Desktops For Now</h3>
                 <!-- <button id="download-btn">
                     <i id="download-btn-icon" class="fa-solid fa-download"></i>
                     Download for Windows
@@ -73,7 +76,7 @@
             <img id="download-img" src="../assets/images/Home.png" alt="">
         </div>
 
-        <div id="not-virus-container">
+        <div id="not-virus-container" class="hide">
             <div>
                 <h2 id="not-virus-header">
                     <i id="not-virus-header-icon" class="fa-solid fa-triangle-exclamation fa-lg"></i>
@@ -106,19 +109,24 @@
         </div>
 
         <div id="download-platforms-container">
-            <div class="download-platforms">
+            <div id="download-platform-windows" class="download-platforms">
+                <h2 class="download-platform-header text-shadow">Windows</h2>
+                <p>Coming Winter 2024</p>
+                <img class="download-platform-img" id="macos-download-img" src="../assets/images/macbook.png" alt="Macbook">
+            </div>
+            <div id="download-platform-macos" class="download-platforms">
                 <h2 class="download-platform-header text-shadow">MacOS</h2>
                 <p>Coming Soon</p>
                 <img class="download-platform-img" id="macos-download-img" src="../assets/images/macbook.png" alt="Macbook">
             </div>
-            <div class="download-platforms">
+            <div id="download-platform-linux" class="download-platforms">
                 <h2 class="download-platform-header text-shadow">Linux</h2>
                 <p>Coming Soon</p>
                 <img class="download-platform-img" id="linux-download-img" src="../assets/images/linux.png" alt="Linux">
             </div>
         </div>
     </main>
-    
+
     <footer>
         <div id="contact-copyright-container">
             <h4 id="footer-contact-label">Contact - clartikdev@gmail.com</h4>

@@ -921,7 +921,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 
-#download-coming-label {
+.download-coming-label {
     font-size: 1.5em;
 
     color: var(--accent-color);
@@ -1434,7 +1434,7 @@ footer {
         font-size: 1.8rem;
     }
     
-    #download-coming-label {
+    .download-coming-label {
         font-size: 1.1em;
     }
 
@@ -1704,6 +1704,10 @@ footer {
         font-size: 0.65rem;
     }
 
+    
+}
+
+@media only screen and (320px < width <= 430px) {
     #privacy-tos-container {
         font-size: 0.8rem;
     }
@@ -2054,7 +2058,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    #download-coming-label {
+    .download-coming-label {
         font-size: 1.1em;
     }
 
@@ -2125,7 +2129,7 @@ footer {
         font-size: 2.2rem;
     }
 
-    #download-coming-label {
+    .download-coming-label {
         font-size: 1.2em;
     }
 
