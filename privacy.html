@@ -13,6 +13,8 @@
 
     <link rel="icon" type="image/x-icon" href="./assets/images/icon.ico">
     <link rel="stylesheet" href="./assets/index.css">
+
+    <script type="text/javascript" src="./src/navbar.js" defer></script>
 </head>
 <body>
     <nav>
@@ -44,13 +46,13 @@
 
         <p id="privacy-last-modified">Last Updated: November 10, 2024</p>
 
-        <p>Canvas HW Reminder (the "App") respects your privacy and is committed to being transparent about its data practices. This privacy policy outlines how the App collects, uses, and stores your information.</p>
+        <p id="privacy-intro-text">Canvas HW Reminder (the "App") respects your privacy and is committed to being transparent about its data practices. This privacy policy outlines how the App collects, uses, and stores your information.</p>
 
         <h2 class="privacy-sub-header">1. Information Collection and Usage</h2>
         <p id="privacy-info-collect-header">The App only collects the following information, which is stored solely on your device:</p>
-        <p class="privacy-info">Canvas API Access Token: Required to authenticate your account and retrieve your Canvas data. This token is stored locally on your device and is not accessible to anyone, including the developer.
-            Base Institution URL: Needed to connect to your institution's Canvas instance. This information is stored locally on your device.
-            User Settings: Any preferences or settings configured in the App are saved locally on your device for a personalized experience.</p>
+        <li class="privacy-info-list"><span class="bold-text">Canvas API Access Token:</span> Required to authenticate your account and retrieve your Canvas data. This token is stored locally on your device and is not accessible to anyone, including the developer.</li>
+        <li class="privacy-info-list"><span class="bold-text">Base Institution URL:</span> Needed to connect to your institution's Canvas instance. This information is stored locally on your device.</li>
+        <li class="privacy-info-list"><span class="bold-text">User Settings:</span> Any preferences or settings configured in the App are saved locally on your device for a personalized experience.</li>
 
         <h2 class="privacy-sub-header">2. Data Storage and Security</h2>
         <p class="privacy-info">All information collected by the App is stored locally on your device. The App does not transmit, share, or store any data externally. This means that the developer has no access to your information, and the data remains private to you.</p>
@@ -72,7 +74,7 @@
         </div>
 
         <div id="privacy-tos-container">
-            <a class="footer-links" href="">Terms of Service</a>
+            <a class="footer-links" href="tos.html">Terms of Service</a>
             <a class="footer-links" href="privacy.html">Privacy</a>
         </div>
     </footer>

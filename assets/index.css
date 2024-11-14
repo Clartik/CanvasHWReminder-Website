@@ -1110,8 +1110,27 @@ input:checked + .slider:before {
     margin-top: 25px;
 }
 
+.privacy-sub-sub-header {
+    margin: 5px 0px;
+    margin-top: 12.5px;
+}
+
 .privacy-info {
     color: var(--secondary-text-color);
+}
+
+.privacy-info-list {
+    padding-inline: 15px;
+    color: var(--secondary-text-color);
+}
+
+.bold-text {
+    font-weight: 500;
+}
+
+#privacy-intro-text {
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 /*#endregion */
