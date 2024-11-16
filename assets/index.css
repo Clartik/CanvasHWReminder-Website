@@ -888,7 +888,7 @@ input:checked + .slider:before {
 
 /*#region Download Page*/
 
-#download-container {
+.download-container {
     width: calc(100% - 30px);
     padding: 30px 15px;
     
@@ -921,7 +921,7 @@ input:checked + .slider:before {
     text-align: center;
 }
 
-.download-coming-label {
+#download-coming-label {
     font-size: 1.5em;
 
     color: var(--accent-color);
@@ -935,7 +935,8 @@ input:checked + .slider:before {
     width: 40%;
 
     border-radius: var(--border-radius-extra);
-    box-shadow: 1px 3px 10px var(--shadow-color);
+
+    filter: drop-shadow(1px 3px 10px var(--shadow-color));
 }
 
 #download-btn {
@@ -1434,7 +1435,7 @@ footer {
 }
 
 @media only screen and (0px < width <= 426px) {
-    #download-container {
+    .download-container {
         justify-items: center;
 
         display: grid;
@@ -1453,7 +1454,7 @@ footer {
         font-size: 1.8rem;
     }
     
-    .download-coming-label {
+    #download-coming-label {
         font-size: 1.1em;
     }
 
@@ -2047,7 +2048,7 @@ footer {
 }
 
 @media only screen and (426px < width <= 613px) {
-    #download-container {
+    .download-container {
         display: grid;
         
         grid-template-columns: auto;
@@ -2068,7 +2069,7 @@ footer {
 }
 
 @media only screen and (426px < width <= 850px) {
-    #download-container {
+    .download-container {
         width: calc(100% - 20px);
         padding: 30px 10px;
     }
@@ -2077,7 +2078,7 @@ footer {
         font-size: 1.8rem;
     }
 
-    .download-coming-label {
+    #download-coming-label {
         font-size: 1.1em;
     }
 
@@ -2137,7 +2138,7 @@ footer {
 }
 
 @media only screen and (850px <= width <= 1025px) {
-    #download-container {
+    .download-container {
         width: calc(100% - 60px);
         padding: 30px 30px;
 
@@ -2148,7 +2149,7 @@ footer {
         font-size: 2.2rem;
     }
 
-    .download-coming-label {
+    #download-coming-label {
         font-size: 1.2em;
     }
 

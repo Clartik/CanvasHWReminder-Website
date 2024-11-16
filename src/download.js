@@ -1,18 +1,17 @@
-const downloadWindowsBtn = document.getElementById('download-btn');
-const downloadContainer = document.getElementById('download-container');
+const downloadBtn = document.getElementById('download-btn');
 const notVirusContainer = document.getElementById('not-virus-container');
 const separator = document.getElementById('separator-container-download');
 
-const comingSoonWindows = document.getElementById('download-coming-label-windows');
-const comingSoonMacOS = document.getElementById('download-coming-label-macos');
-const comingSoonLinux = document.getElementById('download-coming-label-linux');
-const comingSoonMobile = document.getElementById('download-coming-label-mobile');
+const downloadContainerWindows = document.getElementById('download-container-windows');
+const downloadContainerMacOS = document.getElementById('download-container-macos');
+const downloadContainerLinux = document.getElementById('download-container-linux');
+const downloadContainerMobile = document.getElementById('download-container-mobile');
 
 const downloadPlatformWindows = document.getElementById('download-platform-windows');
 const downloadPlatformMacOS = document.getElementById('download-platform-macos');
 const downloadPlatformLinux = document.getElementById('download-platform-linux');
 
-// downloadWindowsBtn.addEventListener('click', () => {
+// downloadBtn.addEventListener('click', () => {
 //     window.location.href = 'https://canvas-hw-reminder.s3.us-west-1.amazonaws.com/Canvas-HW-Reminder-Setup.exe';
 // })
 
@@ -36,40 +35,30 @@ function getOS() {
     return os;
 }
 
-let operatingSystem = getOS();
-
-comingSoonWindows.classList.add('hide');
-comingSoonMacOS.classList.add('hide');
-comingSoonLinux.classList.add('hide');
-comingSoonMobile.classList.add('hide');
-
-notVirusContainer.classList.add('hide');
-separator.classList.add('hide');
+const operatingSystem = getOS();
 
 switch (operatingSystem) {
     case 'Windows':
-        comingSoonWindows.classList.remove('hide');
+        downloadContainerWindows.classList.remove('hide');
+        downloadPlatformWindows.classList.add('hide');
+        
         notVirusContainer.classList.remove('hide');
         separator.classList.remove('hide');
-
-        downloadPlatformWindows.classList.add('hide');
         break;
 
     case 'MacOS':
-        comingSoonMacOS.classList.remove('hide');
-
+        downloadContainerMacOS.classList.remove('hide');
         downloadPlatformMacOS.classList.add('hide');
         break;
 
     case 'Linux':
-        comingSoonLinux.classList.remove('hide');
-
+        downloadContainerLinux.classList.remove('hide');
         downloadPlatformLinux.classList.add('hide');
         break;
 
     case 'iOS':
     case 'Android':
-        comingSoonMobile.classList.remove('hide');
+        downloadContainerMobile.classList.remove('hide');
         break;
 
     default:
