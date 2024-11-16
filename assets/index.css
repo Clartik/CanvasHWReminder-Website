@@ -230,14 +230,6 @@ nav {
     gap: 10px;
 }
 
-#nav-website-logo:hover {
-    /* background-color: var(--primary-color-hover);
-    border-radius: var(--border-radius);
-
-    padding: 10px;
-    padding-left: 0px; */
-}
-
 #nav-website-icon {
     width: 50px;
     height: 50px;
@@ -2192,8 +2184,6 @@ footer {
     #widget-containers {
         align-self: center;
     }
-
-    
 }
 
 @keyframes fade-in {
