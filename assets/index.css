@@ -932,11 +932,26 @@ input:checked + .slider:before {
 }
 
 #download-img {
-    width: 40%;
-
+    width: 100%;
     border-radius: var(--border-radius-extra);
 
     filter: drop-shadow(1px 3px 10px var(--shadow-color));
+}
+
+#download-img-container {
+    width: 40%;
+
+    display: grid;
+    justify-content: center;
+}
+
+.img-caption {
+    justify-self: right;
+    color: var(--secondary-text-color);
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    padding: 10px;
 }
 
 #download-btn {
@@ -1466,7 +1481,7 @@ footer {
         border-radius: var(--border-radius-extra);
     }
 
-    #download-img {
+    #download-img-container {
         width: 85%;
 
         margin-top: 5px;
@@ -2061,9 +2076,8 @@ footer {
         margin-top: 20px;
     }
 
-    #download-img {
+    #download-img-container {
         width: 80%;
-
         margin-top: 10px;
     }
 }
