@@ -11,9 +11,9 @@ const downloadPlatformWindows = document.getElementById('download-platform-windo
 const downloadPlatformMacOS = document.getElementById('download-platform-macos');
 const downloadPlatformLinux = document.getElementById('download-platform-linux');
 
-// downloadBtn.addEventListener('click', () => {
-//     window.open('https://canvas-hw-reminder.s3.us-west-1.amazonaws.com/Canvas-HW-Reminder-Setup.exe', "__blank");
-// })
+downloadBtn.addEventListener('click', () => {
+    window.open('https://canvas-hw-reminder.s3.us-west-1.amazonaws.com/Canvas-HW-Reminder-Setup.exe', "__blank");
+})
 
 function getOS() {
     let userAgent = navigator.userAgent;
